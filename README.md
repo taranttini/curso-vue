@@ -1,4 +1,4 @@
-# curso-vue
+# curso-vue (em desenvolvimento...)
 Curso básico apresentando um pouco do que, e criando projeto de estudo
 
 ### objetivo
@@ -71,3 +71,43 @@ arquivo: index.html
     }
   })
 ```
+
+No javascript puro, ou vanilla js, criamos as variáveis usando por exemplo:
+
+- usando o **var** seguido do nome da variável, sinal de igual e depois o valor atribuído
+```javascript
+  var nome_variavel = 'valor da variável' // texto
+  var outra_variavel = 123 // numero
+```
+
+- usando o **let** seguido do nome da variável, sinal de igual e depois o valor atribuído, *let* quer dizer que a variável poderá receber um valor ao qual irá modificar durante a execução do seu código
+```javascript
+  let nome_variavel_let = 'sou uma variavel que muda de valor' // texto
+  let outra_variavel_let = false // boleana
+ ```
+
+- usando o **const** seguido do nome da variável, sinal de igual e depois o valor atribúido, o *const* quer dizer que a variável não poderá modificar o seu valor durante a execução do seu código
+```javascript
+  const nome_variavel_cont = 'sou uma variavel que nao muda de valor' // texto
+  const outra_variavel_const = [1, 2, 3, 4] // vetor
+```
+
+ o ***let*** e o ***const*** são palavras chaves recentes no mundo javascript, elas foram incluídas no **[ECMAScript 2015](https://pt.wikipedia.org/wiki/ECMAScript)**
+ 
+no vue js, podemos fazer uso das variáveis acima apresentadas dentro de métodos, mas elas costumam aparecer a princípio dentro do 'data':
+
+```javascript
+...
+data() {
+  return {
+    variavel_a: 1,
+    variavel_b: 'nome',
+    ...
+  }
+},
+...
+```
+### variáveis do tipo texto
+
+são varíaveis do tipo texto, quando setamos o valor a ela usando valores em aspa simples 'valor exemplo', aspa dupla "valor exemplo", ou **template string** usando acento grave `valor exemplo`.
+
