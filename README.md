@@ -53,3 +53,21 @@ arquivo: index.html
 </html>
 ```
 
+
+## variáveis
+
+```javascript
+  var app = new Vue({
+    el: '#app',
+    data: {
+      variavel_texto: 'texto', //variavel tipo texto'
+      variavel_numerica_inteiro: 1, //variável tipo numerica inteiro
+      variavel_numerica_ponto_flutuante: 1, //variável tipo numerica ponto flutuante / decimal
+      variavel_boleana: true, //variável tipo boleana
+      variavel_vetor: [1,2,3], //variável tipo vetor
+      variavel_objeto: {nome:'usuario', idade: 10}, //variavel tipo objeto
+      variavel_nula: null, //variável tipo nula
+      variavel_indefinida: undefined, //variável tipo indefinida
+    }
+  })
+```
