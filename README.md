@@ -109,5 +109,5 @@ data() {
 ```
 ### variáveis do tipo texto
 
-são varíaveis do tipo texto, quando setamos o valor a ela usando valores em aspa simples 'valor exemplo', aspa dupla "valor exemplo", ou **template string** usando acento grave `valor exemplo`.
+são varíaveis do tipo texto, quando setamos o valor a ela usando valores em aspa simples 'valor exemplo', aspa dupla "valor exemplo", ou **template string** usando acento grave \`valor exemplo\`.
 
