@@ -1,4 +1,4 @@
-# curso-vue (em desenvolvimento...)
+# Curso Básico de Vue (em desenvolvimento...)
 Curso básico apresentando um pouco do que, e criando projeto de estudo
 
 ### objetivo
@@ -11,9 +11,9 @@ Curso básico apresentando um pouco do que, e criando projeto de estudo
 
 ---
 
-## o que é vue?
+## O que é Vue?
 
-## como usar o vue?
+## Como usar o Vue?
 
 Podemos usar o vue js simplesmente fazendo o download o arquivo vue.js localizado em https://br.vuejs.org/js/vue.js e depois acrescentar o uso da tag ```<script src="caminho do arquivo vue.js"></script>``` dentro do seu arquivo html.
 
@@ -23,7 +23,7 @@ Para aplicações de grande escala (muitos arquivos, muitas linhas de código), 
 
 Além do **[CLI oficial](https://github.com/vuejs/vue-cli)**, outra ferramenta de linha de comando, que permite através de poucos comandos criar toda a estrutura de um grande projeto vue, permite criar o projeto para ambiente de desenvolvimento ou produção, e com toda estrutura para realizar testes unitários ou de toda a aplicação, além de plugins para minimizar o código, hotreload (que ao salvar o arquivo ao qual editamos, já podemos ver o resultado em tempo real), validações de erros, entre tantas outras configurações. 
 
-## exemplo de código
+### Exemplo de código
 
 ```
 arquivo: index.html
@@ -54,18 +54,21 @@ arquivo: index.html
 ```
 
 
-## variáveis
+## Variáveis
+
+Variáveis são extremamente importantes durante o desenvolvimento de programas, apps, sites e etc, pois através das variáveis alocamos um espaço na memória do computador e guardamos valores para usar posteriormente, esses valores podem ser números, texto, resultado de algum cálculo, imagens ou até documentos, por esse motivo as variáveis são importantes no desevolvimento.
+As variaveis em javascript são **"case-sensitive"**, isso quer dizer que uma variável chamada ```nome``` é diferente de outra chamada ```Nome``` ou ```NOME```, e por recomendação devemos utilizar somente letras, números e o caracter "sublinhado" "\_", em alguns casos utilizamos o "cifrão" "$", mas para começar o nome da variável jamais devemos iniciar ela com algum número no nome.
 
 ```javascript
   var app = new Vue({
     el: '#app',
     data: {
       variavel_texto: 'texto', //variavel tipo texto'
-      variavel_numerica_inteiro: 1, //variável tipo numerica inteiro
-      variavel_numerica_ponto_flutuante: 1, //variável tipo numerica ponto flutuante / decimal
+      variavel_numero_inteiro: 1, //variável tipo número inteiro
+      variavel_ponto_flutuante: 1.2345, //variável tipo ponto flutuante / decimal
       variavel_boleana: true, //variável tipo boleana
       variavel_vetor: [1,2,3], //variável tipo vetor
-      variavel_objeto: {nome:'usuario', idade: 10}, //variavel tipo objeto
+      variavel_objeto: {nome:'usuario', idade: 10}, //variável tipo objeto
       variavel_nula: null, //variável tipo nula
       variavel_indefinida: undefined, //variável tipo indefinida
     }
@@ -88,13 +91,13 @@ No javascript puro, ou vanilla js, criamos as variáveis usando por exemplo:
 
 - usando o **const** seguido do nome da variável, sinal de igual e depois o valor atribúido, o *const* quer dizer que a variável não poderá modificar o seu valor durante a execução do seu código
 ```javascript
-  const nome_variavel_cont = 'sou uma variavel que nao muda de valor' // texto
+  const nome_variavel_const = 'sou uma variavel que nao muda de valor' // texto
   const outra_variavel_const = [1, 2, 3, 4] // vetor
 ```
 
- o ***let*** e o ***const*** são palavras chaves recentes no mundo javascript, elas foram incluídas no **[ECMAScript 2015](https://pt.wikipedia.org/wiki/ECMAScript)**
+> o ***let*** e o ***const*** são palavras chaves recentes no mundo javascript, elas foram incluídas no **[ECMAScript 2015](https://pt.wikipedia.org/wiki/ECMAScript)**
  
-no vue js, podemos fazer uso das variáveis acima apresentadas dentro de métodos, mas elas costumam aparecer a princípio dentro do 'data':
+no vue js, podemos fazer uso das variáveis acima apresentadas dentro de métodos, mas elas também são apresentadas dentro do objeto 'data':
 
 ```javascript
 ...
@@ -107,7 +110,52 @@ data() {
 },
 ...
 ```
-### variáveis do tipo texto
+### Variáveis do tipo texto
 
-são varíaveis do tipo texto, quando setamos o valor a ela usando valores em aspa simples 'valor exemplo', aspa dupla "valor exemplo", ou **template string** usando acento grave \`valor exemplo\`.
+São variáveis do tipo texto, quando setamos o valor a ela usando valores entre aspa simples 'valor exemplo' ou entre aspa dupla "valor exemplo".
 
+Elas são apresentadas como ***"string"***
+
+***exemplos:***
+```javascript
+var usuarioPrincipal = 'taranttini';
+var usuario_secundario = 'taranttini';
+var email = 'taranttini@email.com';
+var senha = '123456';
+var data_nascimento = '01-01-1900';
+var mensagem_inicial = 'olá eu sou uma mensagem de boas vindas, ao acessar o novo sistema que está sendo construido';
+```
+
+### Variáveis do tipo número inteiro
+
+São variáveis do tipo número interio, quando setamos o valor de números sem o uso das aspas.
+
+Elas são apresentadas com ***"integer"***
+
+***exemplos:***
+```javascript
+var numero_dez = 10;
+var numero_negativo = -50;
+var ano2000 = 2000;
+var dia_1 = 1;
+var numero_grande = 123456790;
+var numero_maximo_seguro = 9007199254740991;
+```
+
+### Variáveis do tipo ponto flutuante / decimal
+
+São variáveis do tipo ponto flutuante, quanto setamos valores com um 'ponto' '.' juntamente com os números.
+
+Elas são apresentadas como ***"float"***
+
+***exemplos:***
+```javascript
+var valor_pi = 3.14159265359;
+// diferente do modelo brasileiro de números, 
+// o decimal é utilizado através do ponto 
+var dez_reaiz_e_cinquenta_centavos = 10.50; 
+var mil_e_vinte_centavos = 1000.20; 
+// diferente do modelo brasileor de números,
+// a milhar não se usa pontuações
+var dez_mil_e_um_centavo = 10000.01;
+```
