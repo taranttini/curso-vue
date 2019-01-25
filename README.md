@@ -155,7 +155,7 @@ var valor_pi = 3.14159265359;
 // o decimal é utilizado através do ponto 
 var dez_reaiz_e_cinquenta_centavos = 10.50; 
 var mil_e_vinte_centavos = 1000.20; 
-// diferente do modelo brasileor de números,
+// diferente do modelo brasileiro de números,
 // a milhar não se usa pontuações
 var dez_mil_e_um_centavo = 10000.01;
 ```
