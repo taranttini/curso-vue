@@ -153,7 +153,7 @@ Elas são apresentadas como ***"float"***
 var valor_pi = 3.14159265359;
 // diferente do modelo brasileiro de números, 
 // o decimal é utilizado através do ponto 
-var dez_reaiz_e_cinquenta_centavos = 10.50; 
+var dez_reais_e_cinquenta_centavos = 10.50; 
 var mil_e_vinte_centavos = 1000.20; 
 // diferente do modelo brasileiro de números,
 // a milhar não se usa pontuações
