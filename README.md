@@ -159,3 +159,29 @@ var mil_e_vinte_centavos = 1000.20;
 // a milhar não se usa pontuações
 var dez_mil_e_um_centavo = 10000.01;
 ```
+
+### Variáveis do tipo boleana
+
+São variáveis do tipo boleana, quando setamos valores ```true``` ou ```false```, no caso verdadeiro ou falso, ligado ou desligado, sim ou não;
+
+Elas são apresentadas como ***"boolean"***
+
+```javascript
+var verdadeiro = true;
+var falso = false;
+var ligado = 1; // 1 também pode ser considerado como verdadeiro
+var desligado = 0; // 0 também pode ser considerado como falso
+```
+
+### Variáveis do tipo vetor
+
+São variáveis do tipo vetor, quando setamos valores entre 'colchetes' '\[ ... \]', e dentro dele colocamos inteiros, texto, boleanos, outros vetores, objetos, ponto flutuante, o vetor não precisa receber somente valores do mesmo tipo, eles podem ser variados.
+
+Elas são apresentadas como ***"array"***
+
+```javascript
+var vetor_de_internos = [1,2,3,4];
+var vetor_de_boleanos = [true, false, false, true];
+var vetor_de_vogais = ['a','e','i','o','u']; 
+var vetor_misturado = [1,true,'a',-10,'diversos'];
+```
