@@ -53,7 +53,7 @@ arquivo: index.html
 </html>
 ```
 
-
+---
 ## Variáveis
 
 Variáveis são extremamente importantes durante o desenvolvimento de programas, apps, sites e etc, pois através das variáveis alocamos um espaço na memória do computador e guardamos valores para usar posteriormente, esses valores podem ser números, texto, resultado de algum cálculo, imagens ou até documentos, por esse motivo as variáveis são importantes no desevolvimento.
@@ -97,7 +97,7 @@ No javascript puro, ou vanilla js, criamos as variáveis usando por exemplo:
 
 > o ***let*** e o ***const*** são palavras chaves recentes no mundo javascript, elas foram incluídas no **[ECMAScript 2015](https://pt.wikipedia.org/wiki/ECMAScript)**
  
-no vue js, podemos fazer uso das variáveis acima apresentadas dentro de métodos, mas elas também são apresentadas dentro do objeto 'data':
+No vue js, podemos fazer uso das variáveis acima apresentadas dentro de métodos, mas elas também são apresentadas dentro do objeto ou da função/método `'data'`:
 
 ```javascript
 ...
@@ -112,9 +112,9 @@ data() {
 ```
 ### Variáveis do tipo texto
 
-São variáveis do tipo texto, quando setamos o valor a ela usando valores entre aspa simples 'valor exemplo' ou entre aspa dupla "valor exemplo".
+São variáveis do tipo texto, quando setamos o valor a ela usando valores entre aspa simples `'valor exemplo'` ou entre aspa dupla `"valor exemplo"`.
 
-Elas são apresentadas como ***"string"***
+>Elas são conhecidas como ***"string"***
 
 ***exemplos:***
 ```javascript
@@ -130,7 +130,7 @@ var mensagem_inicial = 'olá eu sou uma mensagem de boas vindas, ao acessar o no
 
 São variáveis do tipo número interio, quando setamos o valor de números sem o uso das aspas.
 
-Elas são apresentadas com ***"integer"***
+>Elas são apresentadas com ***"integer"***
 
 ***exemplos:***
 ```javascript
@@ -144,9 +144,9 @@ var numero_maximo_seguro = 9007199254740991;
 
 ### Variáveis do tipo ponto flutuante / decimal
 
-São variáveis do tipo ponto flutuante, quanto setamos valores com um 'ponto' '.' juntamente com os números.
+São variáveis do tipo ponto flutuante, quanto setamos valores com um `'ponto' .` juntamente com os números.
 
-Elas são apresentadas como ***"float"***
+>Elas são conhecidas como ***"float"***
 
 ***exemplos:***
 ```javascript
@@ -162,9 +162,9 @@ var dez_mil_e_um_centavo = 10000.01;
 
 ### Variáveis do tipo boleana
 
-São variáveis do tipo boleana, quando setamos valores ```true``` ou ```false```, no caso verdadeiro ou falso, ligado ou desligado, sim ou não;
+São variáveis do tipo boleana, quando setamos valores `true` ou `false`, no caso verdadeiro ou falso, ligado ou desligado, sim ou não;
 
-Elas são apresentadas como ***"boolean"***
+>Elas são conhecidas como ***"boolean"***
 
 ```javascript
 var verdadeiro = true;
@@ -175,9 +175,9 @@ var desligado = 0; // 0 também pode ser considerado como falso
 
 ### Variáveis do tipo vetor
 
-São variáveis do tipo vetor, quando setamos valores entre 'colchetes' '\[ ... \]', e dentro dele colocamos inteiros, texto, boleanos, outros vetores, objetos, ponto flutuante, o vetor não precisa receber somente valores do mesmo tipo, eles podem ser variados.
+São variáveis do tipo vetor, quando setamos valores entre `'colchetes' [ ... ]`, e dentro dele colocamos inteiros, texto, boleanos, outros vetores, objetos, ponto flutuante, o vetor não precisa receber somente valores do mesmo tipo, eles podem ser variados.
 
-Elas são apresentadas como ***"array"***
+>Elas são conhecidas como ***"array"***
 
 ```javascript
 var vetor_de_internos = [1,2,3,4];
@@ -185,3 +185,54 @@ var vetor_de_boleanos = [true, false, false, true];
 var vetor_de_vogais = ['a','e','i','o','u']; 
 var vetor_misturado = [1,true,'a',-10,'diversos'];
 ```
+
+### Variáveis do tipo objeto
+
+São variáveis do tipo objeto, quanto setamos valores entre `'chaves' { ... }`, e dentro dele definimos, parametros e valores, esses valores podem ser inteiros, texto, boleanos, vetores, outros objetos, ponto flutuante, nula ou indefindo. O objeto pode conter 0 ou inúmeros parametros com valores.
+
+```javascript
+var objeto_pessoa = {
+    nome: 'taranttini',
+    site: 'http://github.com',
+    ano: 2019,
+    mes: 1
+};
+var objeto_data = { dia: 27, mes: 1, ano: 2019 };
+var objeto_documento = { tipo: 'rg', numero: 121231230, valido: true };
+var objeto_vaziu = {};
+```
+
+>Elas são conhecidas como ***"object"***
+
+### Variáveis do tipo nula
+
+São variáveis do tipo nula, quando elas recebem o valor `null`, usamos ela para limpar a variável, quando por exemplo tinhamos um valor qualquer, e queremos limpar esse valor, ai setamos o `null`.
+
+```javascript
+var variavel_nula = null;
+var outra_variavel_nula = null;
+var nome = 'taranttini';
+// agora vamos limpar a variável nome
+nome = null;
+```
+
+>Elas são conhecidas como ***"null"***
+
+### Variáveis do tipo indefinida
+
+São variáveis do tipo indefinida, quando criamos uma varíavel e não setamos valor algum para ela, ou quando setamos ela com o valor `undefined`, nesse caso queremos dizer que o valor da varíavel é indefinido nesse momento de código.
+
+```javascript
+var variavel_indefinida_nao_setada;
+var variavel_indefinida = undefined;
+// vamos criar um objeto, e tentar localizar uma propriedade;
+var pessoa = {};
+pessoa.nome; // nesse caso ao tentar chamar o nome da pessoa, ela será considerada "undefined", pois em momento algum definimos o nome a ela.
+```
+
+>Elas são conhecidas como ***"undefined"***
+
+---
+
+## Métodos
+...
