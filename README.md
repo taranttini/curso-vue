@@ -188,7 +188,7 @@ var vetor_misturado = [1,true,'a',-10,'diversos'];
 
 ### Variáveis do tipo objeto
 
-São variáveis do tipo objeto, quanto setamos valores entre `'chaves' { ... }`, e dentro dele definimos, parametros e valores, esses valores podem ser inteiros, texto, boleanos, vetores, outros objetos, ponto flutuante, nula ou indefindo. O objeto pode conter 0 ou inúmeros parametros com valores.
+São variáveis do tipo objeto, quanto setamos valores entre `'chaves' { ... }`, e dentro dele definimos, parametros e valores, esses valores podem ser inteiros, texto, boleanos, vetores, outros objetos, ponto flutuante, nula ou indefindo. O objeto pode conter 0 ou inúmeros parametros com valores. As propriedades do objeto podem ser acessadas/chamadas usando por exemplo `objeto.propriedade` ou `objeto['propriedade']`.
 
 ```javascript
 var objeto_pessoa = {
@@ -200,7 +200,12 @@ var objeto_pessoa = {
 var objeto_data = { dia: 27, mes: 1, ano: 2019 };
 var objeto_documento = { tipo: 'rg', numero: 121231230, valido: true };
 var objeto_vaziu = {};
+
+//exemplo para acessar alguma propriedade do objeto_pessoa
+objeto_pessoa.nome; //isso retornará 'taranttini'
+objeto_pessoa['ano']; //isso retornará 2019
 ```
+
 
 >Elas são conhecidas como ***"object"***
 
@@ -234,5 +239,54 @@ pessoa.nome; // nesse caso ao tentar chamar o nome da pessoa, ela será consider
 
 ---
 
-## Métodos
-...
+## Funções/Métodos
+
+Função no modelo javascript puro, Método no modelo javascript orientado a objetos, representa função/método um pequeno bloco de instruções que fazem uma ou mais tarefas, a função poderá ter algum retorno ou não, as funções são apresentadas da seguinte forma `function NomeDaFuncao() { /* codigo do que ela fará */}`.
+
+```javascript
+// essa função irá somar e retornar 2 valores pré definidos
+function ProcessaSoma() {
+  var valor_a = 20;
+  var valor_b = 40;
+  return valor_a + valor_b;
+}
+// ao chamar a função da seguinte forma
+ProcessSoma(); // teremos o retorno 60
+// já que a função calculou internamente o valor de 20 + 40 = 60
+
+
+// agora vamos criar uma função que irá calcular 2 valores que passarmos por parametros, 
+// assim deixaremos a função de uma forma dinamica e mais útil, 
+// porque a função anterior não tem muita utilidade, 
+// já que trará o mesmo valor sempre que for chamada
+
+function ProcessaDoisValores(valor_a, valor_b) {
+  return valor_a + valor_b;
+}
+// ao chamar a função da seguinte forma
+ProcessaDoisValores(5, 10); // teremos o retorno 15
+// pois passamos os valores 5 e 10 por parametro, 
+// e internamente a função calculou o 5 + 10 = 15
+
+// mas agora também podemos fazer o uso da mesma função passando outros parametro
+ProcessaDoisValores(1, 2); // teremos 3
+ProcessaDoisValores('nome', 'sobrenome'); // teremos nomesobrenome
+// isso mesmo, ao passar dois valores texto, 
+// o javascript irá concaternar os mesmo e retornar ambos juntos.
+```
+
+As funções são muito úteis para realizar tarefas específicas, pois iremos codificar o que precisamos que ela faça. Um programa feito em javascript poderá ter muitas funções.
+
+No Vue.js as funções, ficarão definidas dentro da propriedade `methods: {}`
+
+```javascript
+new Vue({
+  el: '#app',
+  methods: {
+    // aqui temos uma respresentação da soma de dois valores utilizando o Vue.js
+    retornaSoma(valor_a, valor_b) {
+      return valor_a + valor_b
+    }
+  }
+})
+```
