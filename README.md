@@ -239,6 +239,101 @@ pessoa.nome; // nesse caso ao tentar chamar o nome da pessoa, ela será consider
 
 ---
 
+## Operadores/Operações
+
+Para desenvolvermos programas de computador, constumamos resolver cálculos dos mais variados tipos tais como, soma, subtração, multiplicação, divisão, alguma validação lógica como por exemplo verifica se os valores são verdadeiros ou falsos, se alguma valor é maior, menor ou igual a outro valor.
+
+Esses calculos são realizados através da utilização de símbolos matemáticos, e alguns deles em forma de símbolo matemático específicos a sua linguagem de programação, no nosso caso específicos da linguagem javascript.
+
+
+### Operadores aditivos: soma e subtração
+
+
+***Soma:*** Devemos utilizar o sinal de `'mais' '+'` para realizar uma soma
+```javascript
+1 + 2; // o resultado será 3
+```
+***Subtração:*** Devemos utilizar o sinal de `'menos' '-'` para realizar uma subtração
+```javascript
+2 - 1; // o resultado será 1
+```
+### Operdores multiplicativos: multiplicação, divisão e resto da divisão
+
+***Multiplicação:*** Devemos utilizar o sinal de `'asterisco ou estrela' '*'` para realizar uma multiplicação
+
+```javascript
+2 * 3; // o resultado será 6
+```
+
+***Divisão:*** Devemos utilizar o sinal de `'barra' '/'` para realizar uma divisão
+```javascript
+10 / 2; // o resultado será 5
+```
+
+***Resto da Divisão:*** Devemos utilizar o sinal de `'porcentagem' '%'` para obter o resto de uma divisão
+```javascript
+10 % 3; // o resultado será 1
+```
+
+### Operadores incrementais: servem para adicionar +1 ao valor original da variável
+
+***Pré-incremental*** Devemos utilizar o sinal de `++` __***antes***__ do nome da variável
+
+```javascript
+// no pré-incremental a soma acontece de imediado
+
+var variavel_x = 1;
+++variavel_x // nesse caso a variavel_x terá o valor de 2
+// mas ao chamar ela novamente, ele terá o mesmo valor, pois o incremento já ocorreru anteriormente
+variavel_x // agora o valor será 2
+// se chamar a variavel_x novamente ela ainda será 2
+variavel_x // o valor continuará sendo 2
+```
+
+***Pós-incremental*** Devemos utilizar o sinal de `++` __***depois***__ do nome da variável
+
+```javascript
+// no pós-incremental a soma só acontece depois
+
+var variavel_y = 1;
+variavel_y++ // nesse caso o y terá o valor de 1
+// mas ao chamar ela novamente, ela terá o incremento posterior, pois ela acontece somente depois
+variavel_y // agora o valor será 2
+// se chamar a variavel_y novamente ela ainda será 2
+variavel_y // o valor continuará sendo 2
+```
+
+
+### Operadores decrementais: servem para subtrair -1 ao valor original da variável
+
+***Pré-decremental*** Devemos utilizar o sinal de `--` __***antes***__ do nome da variável
+
+```javascript
+// no pré-decremental a subtração acontece de imediado
+
+var variavel_x = 3;
+--variavel_x // nesse caso a variavel_x terá o valor de 2
+// mas ao chamar ela novamente, ele terá o mesmo valor, pois o decremento já ocorreru anteriormente
+variavel_x // agora o valor será 2
+// se chamar a variavel_x novamente ela ainda será 2
+variavel_x // o valor continuará sendo 2
+```
+
+***Pós-decremental*** Devemos utilizar o sinal de `--` __***depois***__ do nome da variável
+
+```javascript
+// no pós-decremental a subtração só acontece depois
+
+var variavel_y = 3;
+variavel_y-- // nesse caso o y terá o valor de 3
+// mas ao chamar ela novamente, ela terá o decremento posterior, pois ela acontece somente depois
+variavel_y // agora o valor será 2
+// se chamar a variavel_y novamente ela ainda será 2
+variavel_y // o valor continuará sendo 2
+```
+
+---
+
 ## Funções/Métodos
 
 Função no modelo javascript puro, Método no modelo javascript orientado a objetos, representa função/método um pequeno bloco de instruções que fazem uma ou mais tarefas, a função poderá ter algum retorno ou não, as funções são apresentadas da seguinte forma `function NomeDaFuncao() { /* codigo do que ela fará */}`.
