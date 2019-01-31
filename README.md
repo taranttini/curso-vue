@@ -277,7 +277,7 @@ Esses calculos são realizados através da utilização de símbolos matemático
 
 ### Operadores incrementais: servem para adicionar +1 ao valor original da variável
 
-***Pré-incremental*** Devemos utilizar o sinal de `++` __***antes***__ do nome da variável
+***Pré-incremental*** Devemos utilizar o sinal de mais, mais `++` __***antes***__ do nome da variável
 
 ```javascript
 // no pré-incremental a soma acontece de imediado
@@ -290,7 +290,7 @@ variavel_x // agora o valor será 2
 variavel_x // o valor continuará sendo 2
 ```
 
-***Pós-incremental*** Devemos utilizar o sinal de `++` __***depois***__ do nome da variável
+***Pós-incremental*** Devemos utilizar o sinal de mais, mais `++` __***depois***__ do nome da variável
 
 ```javascript
 // no pós-incremental a soma só acontece depois
@@ -306,7 +306,7 @@ variavel_y // o valor continuará sendo 2
 
 ### Operadores decrementais: servem para subtrair -1 ao valor original da variável
 
-***Pré-decremental*** Devemos utilizar o sinal de `--` __***antes***__ do nome da variável
+***Pré-decremental*** Devemos utilizar o sinal de menos, menos `--` __***antes***__ do nome da variável
 
 ```javascript
 // no pré-decremental a subtração acontece de imediado
@@ -319,7 +319,7 @@ variavel_x // agora o valor será 2
 variavel_x // o valor continuará sendo 2
 ```
 
-***Pós-decremental*** Devemos utilizar o sinal de `--` __***depois***__ do nome da variável
+***Pós-decremental*** Devemos utilizar o sinal de menos, menos `--` __***depois***__ do nome da variável
 
 ```javascript
 // no pós-decremental a subtração só acontece depois
@@ -337,29 +337,74 @@ variavel_y // o valor continuará sendo 2
 ***Igualdade***: Devemos utilizar o sinal de igual, igual `==` para validar se dois valores são `iguais`
 
 ```javascript
-// validar ser variavel_a é igual a variável_b
+// declarando variaveis
 var variavel_a = 1;
 var variavel_b = 1;
-variavel_a == variavel_b; // retorna true, pois são iguais
 
-// setamos outro valor para variavel_b
+// validar ser variavel_a é igual a variavel_b
+variavel_a == variavel_b; // 1 == 1 retorna true, pois são iguais
+
+// setando outro valor para variavel_b
 variavel_b = 2;
-variavel_a == variavel_b; // retorna false, pois não são iguais
+
+// validar ser variavel_a é igual a variavel_b
+variavel_a == variavel_b; // 1 == 2 retorna false, pois não são iguais
 ```
 
 
-***Diferença***: Devemos utilizar o sinal de exclamaçao, igual `!=` para validar se dois valores são `diferentes`
+***Diferença***: Devemos utilizar o sinal de exclamação, igual `!=` para validar se dois valores são `diferentes`
 
 ```javascript
-// validar ser variavel_a é diferente da variável_b
+// declarando variaveis
 var variavel_a = 1;
 var variavel_b = 1;
-variavel_a != variavel_b; // retorna false, pois não são diferentes
 
-// setamos outro valor para variavel_b
+// validar ser variavel_a é diferente da variavel_b
+variavel_a != variavel_b; // 1 != 1 retorna false, pois não são diferentes
+
+// setando outro valor para variavel_b
 variavel_b = 2;
-variavel_a != variavel_b; // retorna true, pois são diferentes
+
+// validar ser variavel_a é diferente da variavel_b
+variavel_a != variavel_b; // 1 != 2 retorna true, pois são diferentes
 ```
+
+### Operadores relacionais: servem para validar se o valor é maior que, menor que, maior que ou igual, menor que ou igual, ao outro valor.
+
+***Maior que***: Devemos utilizar o sinal de maior `>` para validar se um valor é maior que o outro
+
+~~~javascript
+// declarando variaveis
+var variavel_a = 2;
+var variavel_b = 1;
+
+// valida se variavel_a é maior que variavel_b
+variavel_a > variavel_b; // 2 > 1 retorna true, pois variavel_a é maior que variavel_b
+
+// setando outro valor
+variavel_b = 3;
+
+// valida se variavel_a é maior que variavel_b
+variavel_a > variavel_b; // 2 > 3 retorna false, pois variavel_a não é maior que variavel_b
+~~~
+
+***Menor que***: Devemos utilizar o sinal de menor `<` para validar se um valor é menor que o outro
+
+~~~javascript
+// declarando variaveis
+var variavel_a = 2;
+var variavel_b = 1;
+
+// valida se variavel_a é menor que variavel_b
+variavel_a < variavel_b; // 2 < 1 retorna false, pois variavel_a não é menor que variavel_b
+
+// setando outro valor
+variavel_b = 3;
+
+// valida se variavel_a é menor que variavel_b
+variavel_a < variavel_b; // 2 < 3 retorna true, pois variavel_a é menor que variavel_b
+~~~
+
 ---
 
 ## Funções/Métodos
