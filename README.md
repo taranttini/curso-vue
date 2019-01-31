@@ -332,6 +332,34 @@ variavel_y // agora o valor será 2
 variavel_y // o valor continuará sendo 2
 ```
 
+### Operadores de igualdade: servem para validar se o valor é igual ou diferente de outro valor
+
+***Igualdade***: Devemos utilizar o sinal de igual, igual `==` para validar se dois valores são `iguais`
+
+```javascript
+// validar ser variavel_a é igual a variável_b
+var variavel_a = 1;
+var variavel_b = 1;
+variavel_a == variavel_b; // retorna true, pois são iguais
+
+// setamos outro valor para variavel_b
+variavel_b = 2;
+variavel_a == variavel_b; // retorna false, pois não são iguais
+```
+
+
+***Diferença***: Devemos utilizar o sinal de exclamaçao, igual `!=` para validar se dois valores são `diferentes`
+
+```javascript
+// validar ser variavel_a é diferente da variável_b
+var variavel_a = 1;
+var variavel_b = 1;
+variavel_a != variavel_b; // retorna false, pois não são diferentes
+
+// setamos outro valor para variavel_b
+variavel_b = 2;
+variavel_a != variavel_b; // retorna true, pois são diferentes
+```
 ---
 
 ## Funções/Métodos
