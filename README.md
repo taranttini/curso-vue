@@ -405,6 +405,33 @@ variavel_b = 3;
 variavel_a < variavel_b; // 2 < 3 retorna true, pois variavel_a é menor que variavel_b
 ~~~
 
+### Operadores lógicos: servem para validar se:
+condição 1 *e* condição 2 são verdadeiras
+condição 1 *ou* condição 2 são verdadeiras
+condição 1 *não* é verdadeira
+
+~~~~javascript
+var var_a = 1;
+var var_b = 1;
+var var_c = 1;
+var var_d = 2;
+var var_e = 2;
+
+var condicao_1 = var_a == var_b; // true
+var condicao_2 = var_a == var_c; // true
+var condicao_3 = var_a == var_d; // false
+var condicao_4 = var_d > var_a; // true
+var condicao_5 = var_e < var_b; // false
+
+condicao_1 && condicao_2; // e, AND -> no caso ambas condições são verdadeiras
+condicao_1 || condicao_3; // ou, OR -> no caso 1 condição é verdadeira e isso nos atente
+!condicao_3; // não, NOT -> no caso estou negando que a condição é não é falsa, retornado verdadeiro
+!condicao_4; // não, NOT -> no caso estou negando que a condição é não é verdadeira, retornando falso
+
+!condicao_3; // true; não falso = verdeiro
+!condicao_4; // false; não verdadeiro = falso
+~~~~
+
 ---
 
 ## Funções/Métodos
