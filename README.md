@@ -175,7 +175,7 @@ var desligado = 0; // 0 também pode ser considerado como falso
 
 ### Variáveis do tipo vetor
 
-São variáveis do tipo vetor, quando setamos valores entre `'colchetes' [ ... ]`, e dentro dele colocamos inteiros, texto, boleanos, outros vetores, objetos, ponto flutuante, o vetor não precisa receber somente valores do mesmo tipo, eles podem ser variados.
+São variáveis do tipo vetor, quando setamos valores entre `'colchetes' [ ... ]`, e separamos cada valor com 'virgula ,' e dentro dele colocamos inteiros, texto, boleanos, outros vetores, objetos, ponto flutuante, o vetor não precisa receber somente valores do mesmo tipo, eles podem ser variados.
 
 >Elas são conhecidas como ***"array"***
 
@@ -199,7 +199,7 @@ var objeto_pessoa = {
 };
 var objeto_data = { dia: 27, mes: 1, ano: 2019 };
 var objeto_documento = { tipo: 'rg', numero: 121231230, valido: true };
-var objeto_vaziu = {};
+var objeto_vazio = {};
 
 //exemplo para acessar alguma propriedade do objeto_pessoa
 objeto_pessoa.nome; //isso retornará 'taranttini'
