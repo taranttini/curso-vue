@@ -9,6 +9,7 @@ Curso básico apresentando um pouco do que, e criando projeto de estudo
 - pesquisar conteúdo de entusiatas de vuejs
 - aplicar exemplos 
 - revisar todo o conteúdo
+- necessario dividir em arquivos
 ---
 
 ## O que é Vue?
