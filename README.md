@@ -532,16 +532,13 @@ var valor_c = 2;
 var texto_a = 'um';
 var texto_b = 'um';
 var texto_c = 'dois';
-var valor_ok = true;
-var valor_nao_ok = false;
 
 // condições
-var condicao_1 = valor_a == valor_b; // 1 == 1              -> true
-var condicao_2 = texto_a == texto_b; // 'um' == 'um'        -> true
-var condicao_3 = valor_a >= valor_c; // 1 >= 2              -> false
-var condicao_4 = texto_a != texto_c; // 'um' != 'dois'      -> true
-var condicao_5 = valor_ok == valor_nao_ok; // true == false -> false
-var condicao_6 = valor_ok != valor_nao_ok; // true != false -> true
+var condicao_1 = valor_a == valor_b; // 1 == 1         -> true
+var condicao_2 = texto_a == texto_b; // 'um' == 'um'   -> true
+var condicao_3 = valor_a >= valor_c; // 1 >= 2         -> false
+var condicao_4 = texto_a != texto_c; // 'um' == 'dois' -> false
+
 
 // validações
 
@@ -551,14 +548,25 @@ var condicao_6 = valor_ok != valor_nao_ok; // true != false -> true
 // estou negando que a condição é não é falsa, retornado verdade
 !condicao_3; // NOT false -> true
 
-!condicao_1 && !condicao_2; // NOT true AND NOT true -> false && false ->false
+!condicao_1 && !condicao_2; // NOT true AND NOT true -> false && false -> false
 
 !condicao_1 && condicao_2; // NOT true AND true -> false && true -> false
 
-!condicao_3 || !condicao_4; // NOT false OR NOT true ->  true OR false -> true
+condicao_1 && !condicao_2; // true AND NOT true -> true && false -> false
 
-!condicao_3 || condicao_4; // NOT false OR true -> true OR true -> true
+!condicao_3 || !condicao_4; // NOT false OR NOT false ->  true OR true -> true
 
+!condicao_3 || condicao_4; // NOT false OR false -> true OR false -> true
+
+condicao_3 || !condicao_4; // false OR NOT false -> false OR true -> true
+
+!true // NOT true -> false
+
+!false // NOT false -> true
+
+!1 // NOT 1 -> false
+
+!0 // NOT 0 -> true
 ~~~~
 
 Tabela verdade 
