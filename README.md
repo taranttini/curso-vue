@@ -18,7 +18,7 @@ Curso básico apresentando um pouco do que, e criando projeto de estudo
 
 Podemos usar o vue js simplesmente fazendo o download o arquivo vue.js localizado em https://br.vuejs.org/js/vue.js e depois acrescentar o uso da tag ```<script src="caminho do arquivo vue.js"></script>``` dentro do seu arquivo html.
 
-Podemos usar o vue js fazendo a referência a uma **CDN** (Content Delivery Network - Rede de Distribuição de Conteúdo), que seria um servidor que armazena conteúdo em cache (em memória), diversos servidores espalhados pelo mundo, e quando solicitamos um conteúdo (arquivo) ele tenta retornar esse dado do servidor mais próximo a nós, fazendo ser bem rápido suas respostas ao conteúdo solicitado. Mas seria parecido com o modo anterior, tag ```<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>``` dentro do seu arquivo html.
+Podemos usar o vue js fazendo a referência a uma **CDN** (Content Delivery Network - Rede de Distribuição de Conteúdo), que seriam diversos servidores espalhados pelo mundo armazenando o mesmo conteúdo em cada servidor referente a essa CDN, o conteúdo é armazenado em memória(cache), e quando solicitamos algum arquivo desses servidores, ele tenta retornar esse dado do servidor mais próximo a nós, fazendo ser bem rápido suas respostas ao conteúdo solicitado. Mas seria parecido com o modo anterior, tag ```<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>``` dentro do seu arquivo html.
 
 Para aplicações de grande escala (muitos arquivos, muitas linhas de código), é recomendado o uso do vue através do **NPM** (Node Package Manager - Gerenciador de Pacotes do Node), que é uma ferramenta de linha de comando que nos ajuda a instalar diversas bibliotecas que possam ser úteis em nosso projeto, e também inclui empacotadores de módulos tais como ***[Webpack](https://webpack.js.org/)*** ou ***[Browserify](http://browserify.org/)*** . Exemplo de uso do npm ```npm install vue``` 
 
@@ -26,10 +26,7 @@ Além do **[CLI oficial](https://github.com/vuejs/vue-cli)**, outra ferramenta d
 
 ### Exemplo de código
 
-```
-arquivo: index.html
-``` 
-
+> ```arquivo: index.html``` 
 ```html
 <html>
 <head>
@@ -96,7 +93,7 @@ No javascript puro, ou vanilla js, criamos as variáveis usando por exemplo:
   const outra_variavel_const = [1, 2, 3, 4] // vetor
 ```
 
-> o ***let*** e o ***const*** são palavras chaves recentes no mundo javascript, elas foram incluídas no **[ECMAScript 2015](https://pt.wikipedia.org/wiki/ECMAScript)**
+> o ***let*** e o ***const*** são palavras chaves do javascript, e elas foram incluídas no **[ECMAScript 2015](https://pt.wikipedia.org/wiki/ECMAScript)**
  
 No vue js, podemos fazer uso das variáveis acima apresentadas dentro de métodos, mas elas também são apresentadas dentro do objeto ou da função/método `'data'`:
 
@@ -260,7 +257,7 @@ Esses calculos são realizados através da utilização de símbolos matemático
 ```
 ### Operdores multiplicativos: multiplicação, divisão e resto da divisão
 
-***Multiplicação:*** Devemos utilizar o sinal de `'asterisco ou estrela' '*'` para realizar uma multiplicação
+***Multiplicação:*** Devemos utilizar o sinal de `'asterisco/estrela' '*'` para realizar uma multiplicação
 
 ```javascript
 2 * 3; // o resultado será 6
@@ -333,9 +330,9 @@ variavel_y // agora o valor será 2
 variavel_y // o valor continuará sendo 2
 ```
 
-### Operadores de igualdade: servem para validar se o valor é igual ou diferente de outro valor
+### Operadores de igualdade: servem para validar se dois ou mais valores são iguais
 
-***Igualdade***: Devemos utilizar o sinal de igual, igual `==` para validar se dois valores são `iguais`
+***Igualdade***: Devemos utilizar o sinal de  `'igual, igual'` `'=='` para validar se dois valores são `iguais`
 
 ```javascript
 // declarando variaveis
@@ -353,7 +350,7 @@ variavel_a == variavel_b; // 1 == 2 retorna false, pois não são iguais
 ```
 
 
-***Diferença***: Devemos utilizar o sinal de exclamação, igual `!=` para validar se dois valores são `diferentes`
+***Diferença***: Devemos utilizar o sinal de `'exclamação, igual'` `'!='` para validar se dois valores são `diferentes`
 
 ```javascript
 // declarando variaveis
@@ -372,7 +369,7 @@ variavel_a != variavel_b; // 1 != 2 retorna true, pois são diferentes
 
 ### Operadores relacionais: servem para validar se o valor é maior que, menor que, maior que ou igual, menor que ou igual, ao outro valor.
 
-***Maior que***: Devemos utilizar o sinal de maior `>` para validar se um valor é maior que o outro
+***Maior que***: Devemos utilizar o `'sinal de maior'` `'>'` para validar se um valor é maior que o outro
 
 ~~~javascript
 // declarando variaveis
@@ -389,7 +386,7 @@ variavel_b = 3;
 variavel_a > variavel_b; // 2 > 3 retorna false, pois variavel_a não é maior que variavel_b
 ~~~
 
-***Menor que***: Devemos utilizar o sinal de menor `<` para validar se um valor é menor que o outro
+***Menor que***: Devemos utilizar o `'sinal de menor'` `'<'` para validar se um valor é menor que o outro
 
 ~~~javascript
 // declarando variaveis
@@ -407,32 +404,161 @@ variavel_a < variavel_b; // 2 < 3 retorna true, pois variavel_a é menor que var
 ~~~
 
 ### Operadores lógicos: servem para validar se:
-condição 1 *e* condição 2 são verdadeiras
 
-condição 1 *ou* condição 2 são verdadeiras
+**E lógico, AND**: Devemos utilizar `'E comercial, E comercial'` `'&&'` para validar se condição 1 `'E'` condição 2 são verdadeiras
 
-condição 1 *não* verdadeira
+~~~javascript
+// variaveis
+var valor_a = 1;
+var valor_b = 1;
+var valor_c = 2;
+var texto_a = 'um';
+var texto_b = 'um';
+var texto_c = 'dois';
+
+// condições
+var condicao_1 = valor_a == valor_b; // 1 == 1         -> true
+var condicao_2 = texto_a == texto_b; // 'um' == 'um'   -> true
+var condicao_3 = valor_a != valor_b; // 1 != 1         -> false
+var condicao_4 = texto_a != texto_b; // 'um' != 'um'   -> false
+var condicao_5 = valor_a != valor_c; // 1 != 2         -> true
+var condicao_6 = texto_a != texto_c; // 'um' != 'dois' -> true
+var condicao_7 = valor_a == valor_c; // 1 == 2         -> false
+var condicao_8 = texto_a == texto_c; // 'um' == 'dois' -> false
+
+// validações simples
+
+// condicao_1 E/AND condicao_2
+// ambas condições verdadeiras, resulta em verdade
+condicao_1 && condicao_2; // true AND true -> true
+
+// condicao_3 E/AND condicao_4
+// ambas condições falsa, resulta em falso
+condicao_3 && condicao_4; // false AND false -> false
+
+// condicao_1 E/AND condicao_3
+// uma condição falsa, resulta em falso
+condicao_1 && condicao_3; // true AND false -> false
+
+// condicao_4 E/AND condicao_2
+// uma condição falsa, resulta em falso
+condicao_4 && condicao_2; // false AND true -> false
+
+// condicao_5 E/AND condicao_6
+// ambas condições verdadeiras, resulta em verdade
+condicao_5 && condicao_6; // true AND true -> true
+
+// condicao_7 E/AND condicao_8
+// ambas condições falsa, resulta em falso
+condicao_7 && condicao_8; // false AND false -> false
+
+// validações complexas
+
+// valor_a igual a valor_b E/AND texto_a igual a texto_b
+// (1 == 1) && ('um' == 'um')
+(valor_a == valor_b) && (texto_a == texto_b); // true AND true -> true
+
+// (valor_a diferente de valor_c) E/AND (texto_a diferente de texto_c)
+// 1 != 2 && 'um' != 'dois' -> true
+(valor_a != valor_c) && (texto_a != texto_c); // true AND true -> true
+~~~
+
+**OU lógico, OR**: Devemos utilizar `'pipe, pipe ou barra vertical, barra vertical'` `'||'` para validar se condição 1 `'OU'` condição 2 são verdadeiras
+
+
+~~~javascript
+// variaveis
+var valor_a = 1;
+var valor_b = 1;
+var valor_c = 2;
+var texto_a = 'um';
+var texto_b = 'um';
+var texto_c = 'dois';
+
+// condições
+var condicao_1 = valor_a == valor_b; // 1 == 1         -> true
+var condicao_2 = texto_a == texto_b; // 'um' == 'um'   -> true
+var condicao_3 = valor_a != valor_b; // 1 != 1         -> false
+var condicao_4 = texto_a != texto_b; // 'um' != 'um'   -> false
+var condicao_5 = valor_a != valor_c; // 1 != 2         -> true
+var condicao_6 = texto_a != texto_c; // 'um' != 'dois' -> true
+var condicao_7 = valor_a == valor_c; // 1 == 2         -> false
+var condicao_8 = texto_a == texto_c; // 'um' == 'dois' -> false
+
+// validações simples
+
+// condicao_1 OU/OR condicao_2 
+// ambas condições verdaderias, resulta em verdade
+condicao_1 || condicao_2; // true OR true -> true
+
+// condicao_3 OU/OR condicao_4
+// ambas condições falsas, resulta em false
+condicao_3 || condicao_4; // false OR false -> false
+
+// condicao_1 OU/OR condicao_3
+// uma condição verdadeira, resulta em verdade
+condicao_1 || condicao_3; // true OR false -> true
+
+// condicao_4 OU/OR condicao_2
+// uma condição verdadeira, resulta em verdade
+condicao_4 || condicao_2; // false OR true -> true
+
+// condicao_5 OU/OR condicao_6
+// ambas condições verdaderias, resulta em verdade
+condicao_5 || condicao_6; // true OR true -> true
+
+// condicao_7 OU/OR condicao_8
+// ambas condições falsas, resulta em false
+condicao_7 || condicao_8; // false OR false -> false
+
+// validações complexas
+
+// valor_a igual a valor_b OU/OR texto_a igual a texto_b
+// (1 == 1) || ('um' == 'um')
+(valor_a == valor_b) || (texto_a == texto_b); // true OR true -> true
+
+// (valor_a diferente de valor_c) OU/OR (texto_a diferente de texto_c)
+// 1 != 2 || 'um' != 'dois' -> true
+(valor_a != valor_c) || (texto_a != texto_c); // true OR true -> true
+~~~
+
+**NÃO lógico, NOT**: Devemos utilizar `'exclamação'` `'!'` antes da variável ou condição, para negar e dizer que a variável ou condição `'NÃO'` é verdadeira ou `'NÃO'` é falsa
 
 ~~~~javascript
-var var_a = 1;
-var var_b = 1;
-var var_c = 1;
-var var_d = 2;
-var var_e = 2;
+// variaveis
+var valor_a = 1;
+var valor_b = 1;
+var valor_c = 2;
+var texto_a = 'um';
+var texto_b = 'um';
+var texto_c = 'dois';
+var valor_ok = true;
+var valor_nao_ok = false;
 
-var condicao_1 = var_a == var_b; // true
-var condicao_2 = var_a == var_c; // true
-var condicao_3 = var_a == var_d; // false
-var condicao_4 = var_d > var_a; // true
-var condicao_5 = var_e < var_b; // false
+// condições
+var condicao_1 = valor_a == valor_b; // 1 == 1              -> true
+var condicao_2 = texto_a == texto_b; // 'um' == 'um'        -> true
+var condicao_3 = valor_a >= valor_c; // 1 >= 2              -> false
+var condicao_4 = texto_a != texto_c; // 'um' != 'dois'      -> true
+var condicao_5 = valor_ok == valor_nao_ok; // true == false -> false
+var condicao_6 = valor_ok != valor_nao_ok; // true != false -> true
 
-condicao_1 && condicao_2; // e, AND -> no caso ambas condições são verdadeiras
-condicao_1 || condicao_3; // ou, OR -> no caso 1 condição é verdadeira e isso nos atente
-!condicao_3; // não, NOT -> no caso estou negando que a condição é não é falsa, retornado verdadeiro
-!condicao_4; // não, NOT -> no caso estou negando que a condição é não é verdadeira, retornando falso
+// validações
 
-!condicao_3; // true; não falso = verdeiro
-!condicao_4; // false; não verdadeiro = falso
+// estou negando que a condição é não é verdade, retornado falso
+!condicao_1; // NOT true -> false
+
+// estou negando que a condição é não é falsa, retornado verdade
+!condicao_3; // NOT false -> true
+
+!condicao_1 && !condicao_2; // NOT true AND NOT true -> false && false ->false
+
+!condicao_1 && condicao_2; // NOT true AND true -> false && true -> false
+
+!condicao_3 || !condicao_4; // NOT false OR NOT true ->  true OR false -> true
+
+!condicao_3 || condicao_4; // NOT false OR true -> true OR true -> true
+
 ~~~~
 
 Tabela verdade 
