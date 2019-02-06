@@ -463,7 +463,7 @@ condicao_7 && condicao_8; // false AND false -> false
 (valor_a != valor_c) && (texto_a != texto_c); // true AND true -> true
 ~~~
 
-**OU lógico, OR**: Devemos utilizar `'pipe, pipe ou barra vertical, barra vertical'` `'||'` para validar se condição 1 `'OU'` condição 2 são verdadeiras
+**OU lógico, OR**: Devemos utilizar `'pipe, pipe ou barra vertical, barra vertical'` `'||'` para validar se condição 1 `'OU'` condição 2 são verdadeiras ou se uma é verdadeira
 
 
 ~~~javascript
@@ -548,17 +548,23 @@ var condicao_4 = texto_a != texto_c; // 'um' == 'dois' -> false
 // estou negando que a condição é não é falsa, retornado verdade
 !condicao_3; // NOT false -> true
 
-!condicao_1 && !condicao_2; // NOT true AND NOT true -> false && false -> false
+// NOT true AND NOT true -> false && false 
+!condicao_1 && !condicao_2; // false
 
-!condicao_1 && condicao_2; // NOT true AND true -> false && true -> false
+// NOT true AND true -> false && true 
+!condicao_1 && condicao_2; // false
 
-condicao_1 && !condicao_2; // true AND NOT true -> true && false -> false
+// true AND NOT true -> true && false
+condicao_1 && !condicao_2; // false
 
-!condicao_3 || !condicao_4; // NOT false OR NOT false ->  true OR true -> true
+// NOT false OR NOT false ->  true OR true 
+!condicao_3 || !condicao_4; // true
 
-!condicao_3 || condicao_4; // NOT false OR false -> true OR false -> true
+// NOT false OR false -> true OR false
+!condicao_3 || condicao_4; // true
 
-condicao_3 || !condicao_4; // false OR NOT false -> false OR true -> true
+// false OR NOT false -> false OR true
+condicao_3 || !condicao_4; // true
 
 !true // NOT true -> false
 
@@ -569,16 +575,28 @@ condicao_3 || !condicao_4; // false OR NOT false -> false OR true -> true
 !0 // NOT 0 -> true
 ~~~~
 
-Tabela verdade 
+
+> true = verdadeiro \
+> false = falso
+
+### Tabela verdade `&&` (E / AND)
 
 | Condição 1 | Operador | Condição 2 | Resultado |
-|:--------|:--------:|--------:|---------:|
-| verdadeiro / true | E / AND | falso / false | falso / false |
-| verdadeiro / true | E / AND | verdadeiro / true | verdadeiro / true|
-| falso / false | E / AND | falso / false |	falso / false |
-| verdadeiro / true | OU / OR | falso / false	| verdadeiro / true |
-| verdadeiro / true | OU / OR | verdadeiro / true | verdadeiro / true |
-| falso / false | OU / OR | falso / false |	falso / false |
+|:--------:|:--------:|:--------:|---------:|
+| true | && | false | false |
+| false | && | true | false |
+| true | && | true | true|
+| false | && | false |	false |
+
+### Tabela verdade `||` (OU / OR)
+
+| Condição 1 | Operador | Condição 2 | Resultado |
+|:--------:|:--------:|:--------:|---------:|
+| true | \|\| | false	| true |
+| false | \|\| | true	| true |
+| true | \|\| | true | true |
+| false | \|\| | false |	false |
+
 
 ---
 
