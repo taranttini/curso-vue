@@ -369,7 +369,7 @@ variavel_a != variavel_b; // 1 != 2 retorna true, pois são diferentes
 
 ### Operadores relacionais: servem para validar se o valor é maior que, menor que, maior que ou igual, menor que ou igual, ao outro valor.
 
-***Maior que***: Devemos utilizar o `'sinal de maior'` `'>'` para validar se um valor é maior que o outro
+***Maior que***: Devemos utilizar o `'sinal maior'` `'>'` para validar se um valor é maior que o outro
 
 ~~~javascript
 // declarando variaveis
@@ -386,7 +386,7 @@ variavel_b = 3;
 variavel_a > variavel_b; // 2 > 3 retorna false, pois variavel_a não é maior que variavel_b
 ~~~
 
-***Menor que***: Devemos utilizar o `'sinal de menor'` `'<'` para validar se um valor é menor que o outro
+***Menor que***: Devemos utilizar o `'sinal menor'` `'<'` para validar se um valor é menor que o outro
 
 ~~~javascript
 // declarando variaveis
