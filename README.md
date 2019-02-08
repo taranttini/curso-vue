@@ -12,44 +12,16 @@ Curso básico apresentando um pouco do que, e criando projeto de estudo
 - necessario dividir em arquivos
 ---
 
-## O que é Vue?
+Esse curso básico de Vue será divido em duas partes: 
+- Na primeira parte irei falar do JavaScript, apresentando o básico da linguagem dessa fantástica linguagem de programação, e ter o mínimo de conhecimento necessário para poder entender de VueJs.
 
-## Como usar o Vue?
+- Na segunda parte irei falar do VueJs, apresentando um pouco desse maravilhoso framework, e após termino do curso você terá uma base inicial de conhecimento para construir teus próprios códigos em VueJs.
 
-Podemos usar o vue js simplesmente fazendo o download o arquivo vue.js localizado em https://br.vuejs.org/js/vue.js e depois acrescentar o uso da tag ```<script src="caminho do arquivo vue.js"></script>``` dentro do seu arquivo html.
+# Primeira Parte - JavaScript
 
-Podemos usar o vue js fazendo a referência a uma **CDN** (Content Delivery Network - Rede de Distribuição de Conteúdo), que seriam diversos servidores espalhados pelo mundo armazenando o mesmo conteúdo em cada servidor referente a essa CDN, o conteúdo é armazenado em memória(cache), e quando solicitamos algum arquivo desses servidores, ele tenta retornar esse dado do servidor mais próximo a nós, fazendo ser bem rápido suas respostas ao conteúdo solicitado. Mas seria parecido com o modo anterior, tag ```<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>``` dentro do seu arquivo html.
+## JavaScript
 
-Para aplicações de grande escala (muitos arquivos, muitas linhas de código), é recomendado o uso do vue através do **NPM** (Node Package Manager - Gerenciador de Pacotes do Node), que é uma ferramenta de linha de comando que nos ajuda a instalar diversas bibliotecas que possam ser úteis em nosso projeto, e também inclui empacotadores de módulos tais como ***[Webpack](https://webpack.js.org/)*** ou ***[Browserify](http://browserify.org/)*** . Exemplo de uso do npm ```npm install vue``` 
-
-Além do **[CLI oficial](https://github.com/vuejs/vue-cli)**, outra ferramenta de linha de comando, que permite através de poucos comandos criar toda a estrutura de um grande projeto vue, permite criar o projeto para ambiente de desenvolvimento ou produção, e com toda estrutura para realizar testes unitários ou de toda a aplicação, além de plugins para minimizar o código, hotreload (que ao salvar o arquivo ao qual editamos, já podemos ver o resultado em tempo real), validações de erros, entre tantas outras configurações. 
-
-### Exemplo de código
-
-> ```arquivo: index.html``` 
-```html
-<html>
-<head>
-  <title>Exemplo, olá mundo Vue</title>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
-</head>
-
-<body>
-  <div id="app">
-    {{ mensagem }}
-  </div>
-
-  <script>
-    var app = new Vue({
-      el: '#app',
-      data: {
-        mensagem: 'Exemplo, olá mundo Vue!'
-      }
-    })
-  </script>
-</body>
-</html>
-```
+## O que é JavaScript?
 
 ---
 ## Variáveis
@@ -57,23 +29,8 @@ Além do **[CLI oficial](https://github.com/vuejs/vue-cli)**, outra ferramenta d
 Variáveis são extremamente importantes durante o desenvolvimento de programas, apps, sites e etc, pois através das variáveis alocamos um espaço na memória do computador e guardamos valores para usar posteriormente, esses valores podem ser números, texto, resultado de algum cálculo, imagens ou até documentos, por esse motivo as variáveis são importantes no desevolvimento.
 As variaveis em javascript são **"case-sensitive"**, isso quer dizer que uma variável chamada ```nome``` é diferente de outra chamada ```Nome``` ou ```NOME```, e por recomendação devemos utilizar somente letras, números e o caracter "sublinhado" "\_", em alguns casos utilizamos o "cifrão" "$", mas para começar o nome da variável jamais devemos iniciar ela com algum número no nome.
 
-```javascript
-  var app = new Vue({
-    el: '#app',
-    data: {
-      variavel_texto: 'texto', //variavel tipo texto'
-      variavel_numero_inteiro: 1, //variável tipo número inteiro
-      variavel_ponto_flutuante: 1.2345, //variável tipo ponto flutuante / decimal
-      variavel_boleana: true, //variável tipo boleana
-      variavel_vetor: [1,2,3], //variável tipo vetor
-      variavel_objeto: {nome:'usuario', idade: 10}, //variável tipo objeto
-      variavel_nula: null, //variável tipo nula
-      variavel_indefinida: undefined, //variável tipo indefinida
-    }
-  })
-```
 
-No javascript puro, ou vanilla js, criamos as variáveis usando por exemplo:
+Criamos as variáveis usando por exemplo:
 
 - usando o **var** seguido do nome da variável, sinal de igual e depois o valor atribuído
 ```javascript
@@ -95,19 +52,7 @@ No javascript puro, ou vanilla js, criamos as variáveis usando por exemplo:
 
 > o ***let*** e o ***const*** são palavras chaves do javascript, e elas foram incluídas no **[ECMAScript 2015](https://pt.wikipedia.org/wiki/ECMAScript)**
  
-No vue js, podemos fazer uso das variáveis acima apresentadas dentro de métodos, mas elas também são apresentadas dentro do objeto ou da função/método `'data'`:
 
-```javascript
-...
-data() {
-  return {
-    variavel_a: 1,
-    variavel_b: 'nome',
-    ...
-  }
-},
-...
-```
 ### Variáveis do tipo texto
 
 São variáveis do tipo texto, quando setamos o valor a ela usando valores entre aspa simples `'valor exemplo'` ou entre aspa dupla `"valor exemplo"`.
@@ -149,10 +94,12 @@ São variáveis do tipo ponto flutuante, quanto setamos valores com um `'ponto' 
 ***exemplos:***
 ```javascript
 var valor_pi = 3.14159265359;
+
 // diferente do modelo brasileiro de números, 
 // o decimal é utilizado através do ponto 
 var dez_reais_e_cinquenta_centavos = 10.50; 
 var mil_e_vinte_centavos = 1000.20; 
+
 // diferente do modelo brasileiro de números,
 // a milhar não se usa pontuações
 var dez_mil_e_um_centavo = 10000.01;
@@ -539,7 +486,6 @@ var condicao_2 = texto_a == texto_b; // 'um' == 'um'   -> true
 var condicao_3 = valor_a >= valor_c; // 1 >= 2         -> false
 var condicao_4 = texto_a != texto_c; // 'um' == 'dois' -> false
 
-
 // validações
 
 // estou negando que a condição é não é verdade, retornado falso
@@ -600,9 +546,9 @@ condicao_3 || !condicao_4; // true
 
 ---
 
-## Funções/Métodos
+## Funções
 
-Função no modelo javascript puro, Método no modelo javascript orientado a objetos, representa função/método um pequeno bloco de instruções que fazem uma ou mais tarefas, a função poderá ter algum retorno ou não, as funções são apresentadas da seguinte forma `function NomeDaFuncao() { /* codigo do que ela fará */}`.
+Função representa um pequeno bloco de instruções que fazem uma ou mais tarefas, a função poderá ter algum retorno ou não, as funções são apresentadas da seguinte forma `function NomeDaFuncao() { /* codigo do que ela fará */}`.
 
 ```javascript
 // essa função irá somar e retornar 2 valores pré definidos
@@ -637,6 +583,86 @@ ProcessaDoisValores('nome', 'sobrenome'); // teremos nomesobrenome
 ```
 
 As funções são muito úteis para realizar tarefas específicas, pois iremos codificar o que precisamos que ela faça. Um programa feito em javascript poderá ter muitas funções.
+
+
+
+# Segunda Parte - Vue
+
+## Vue
+
+## O que é Vue?
+
+## Como usar o Vue?
+
+Podemos usar o vue js simplesmente fazendo o download o arquivo vue.js localizado em https://br.vuejs.org/js/vue.js e depois acrescentar o uso da tag ```<script src="caminho do arquivo vue.js"></script>``` dentro do seu arquivo html.
+
+Podemos usar o vue js fazendo a referência a uma **CDN** (Content Delivery Network - Rede de Distribuição de Conteúdo), que seriam diversos servidores espalhados pelo mundo armazenando o mesmo conteúdo em cada servidor referente a essa CDN, o conteúdo é armazenado em memória(cache), e quando solicitamos algum arquivo desses servidores, ele tenta retornar esse dado do servidor mais próximo a nós, fazendo ser bem rápido suas respostas ao conteúdo solicitado. Mas seria parecido com o modo anterior, tag ```<script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>``` dentro do seu arquivo html.
+
+Para aplicações de grande escala (muitos arquivos, muitas linhas de código), é recomendado o uso do vue através do **NPM** (Node Package Manager - Gerenciador de Pacotes do Node), que é uma ferramenta de linha de comando que nos ajuda a instalar diversas bibliotecas que possam ser úteis em nosso projeto, e também inclui empacotadores de módulos tais como ***[Webpack](https://webpack.js.org/)*** ou ***[Browserify](http://browserify.org/)*** . Exemplo de uso do npm ```npm install vue``` 
+
+Além do **[CLI oficial](https://github.com/vuejs/vue-cli)**, outra ferramenta de linha de comando, que permite através de poucos comandos criar toda a estrutura de um grande projeto vue, permite criar o projeto para ambiente de desenvolvimento ou produção, e com toda estrutura para realizar testes unitários ou de toda a aplicação, além de plugins para minimizar o código, hotreload (que ao salvar o arquivo ao qual editamos, já podemos ver o resultado em tempo real), validações de erros, entre tantas outras configurações. 
+
+### Exemplo de código
+
+> ```arquivo: index.html``` 
+```html
+<html>
+<head>
+  <title>Exemplo, olá mundo Vue</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    {{ mensagem }}
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        mensagem: 'Exemplo, olá mundo Vue!'
+      }
+    })
+  </script>
+</body>
+</html>
+```
+
+# Variaveis
+
+
+No vue js, podemos fazer uso das variáveis acima apresentadas dentro de métodos, mas elas também são apresentadas dentro do objeto ou da função/método `'data'`:
+
+~~~javascript
+...
+data() {
+  return {
+    variavel_a: 1,
+    variavel_b: 'nome',
+    ...
+  }
+},
+...
+~~~
+
+```javascript
+  var app = new Vue({
+    el: '#app',
+    data: {
+      variavel_texto: 'texto', //variavel tipo texto'
+      variavel_numero_inteiro: 1, //variável tipo número inteiro
+      variavel_ponto_flutuante: 1.2345, //variável tipo ponto flutuante / decimal
+      variavel_boleana: true, //variável tipo boleana
+      variavel_vetor: [1,2,3], //variável tipo vetor
+      variavel_objeto: {nome:'usuario', idade: 10}, //variável tipo objeto
+      variavel_nula: null, //variável tipo nula
+      variavel_indefinida: undefined, //variável tipo indefinida
+    }
+  })
+```
+
+## Funções
 
 No Vue.js as funções, ficarão definidas dentro da propriedade `methods: {}`
 
