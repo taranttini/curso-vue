@@ -664,15 +664,19 @@ data() {
 
 ## Funções
 
-No Vue.js as funções, ficarão definidas dentro da propriedade `methods: {}`
+No Vue.js as funções, ficarão definidas dentro da propriedade `methods: {}`, e elas são definidas sem o uso da palavra chave `'function'`, ficando somente o nome da função e os parametros necessários.
 
 ```javascript
 new Vue({
   el: '#app',
   methods: {
-    // aqui temos uma respresentação da soma de dois valores utilizando o Vue.js
+    // aqui temos uma respresentação da soma de dois valores 
     retornaSoma(valor_a, valor_b) {
       return valor_a + valor_b
+    }
+    // aqui temos uma respresentação da multiplicação de dois valores 
+    retornaMultiplicacao(valor_a, valor_b) {
+      return valor_a * valor_b
     }
   }
 })
