@@ -546,6 +546,62 @@ condicao_3 || !condicao_4; // true
 
 ---
 
+## Controles de Fluxo e de Repetição
+
+Servem para nos auxiliar em rotinas que só ocorrem durante algumas decisões forem validas positivamente ou negativamente, e podemos ter um controle de fluxo que faz uma coisa ou outra coisa conforme a decisão, ou ter outro controle que irá repetir um trecho de código enquanto tivermos uma decisão aceitavel para a mesma.
+
+***Controle de fluxo `'IF'`:*** serve para validar 'SE' uma condição é satisfatória
+
+~~~javascript
+// if ( condição )
+if (1 == 1) {
+  // realiza a rotina que estiver aqui dentro
+}
+~~~
+
+Então se a condição for satistaória ela irá realizar aquele trecho de código, se não for satisfatória o programa simplesmente irá ignorar aquele trecho de código.
+
+~~~javascript
+var a = 1;
+var b = 2;
+if (1 < 2) {
+  console.log('codigo do se')
+}
+console.log('fim')
+// aqui temos a saída : codigo do se e fim
+~~~
+
+~~~javascript
+var a = 1;
+var b = 2;
+if (1 > 2) {
+  console.log('codigo do se')
+}
+console.log('fim')
+// aqui temos a saída : fim
+~~~
+
+***Controle de fluxo `'ELSE'`:*** serve para auxiliar a condição 'IF', que no caso é a condição contrária do 'SE', então 'SE' uma condição não for satisfatória, o programa irá executa o trecho de código  referente do 'SENÃO'
+
+~~~javascript
+var a = 1;
+var b = 2;
+if (1 > 2) {
+  console.log('codigo do se')
+}
+else {
+  console.log('codigo do senao')
+}
+console.log('fim')
+// aqui temos a saída : codigo do senao e fim
+~~~
+
+
+Então se a condição for satistaória ela irá realizar aquele trecho de código, se não for satisfatória o programa ele ira ignorar o techo de código do se, e simplesmente irá executar o trecho de código do senão.
+
+
+---
+
 ## Funções
 
 Função representa um pequeno bloco de instruções que fazem uma ou mais tarefas, a função poderá ter algum retorno ou não, as funções são apresentadas da seguinte forma `function NomeDaFuncao() { /* codigo do que ela fará */}`.
@@ -735,6 +791,32 @@ Exemplo Modificado
 ![m'exemplo do resultado modificado os campos](imagens/img4.jpg)
 
 > Aqui se percebe que ao modificar o valor do campo, ele modificou o valor dentro dos colchetes, e a `variavel_b` terá o valor `20 modificado`
+
+### Tipos de Diretivas
+
+**v-text**
+
+**v-html**
+
+**v-show**
+
+**v-if**
+
+**v-else**
+
+**v-for**
+
+**v-on**
+
+**v-bind**
+
+**v-model**
+
+**v-pre**
+
+**v-cloak**
+
+**v-once**
 
 ## Funções
 
