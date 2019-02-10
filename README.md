@@ -628,24 +628,51 @@ Além do **[CLI oficial](https://github.com/vuejs/vue-cli)**, outra ferramenta d
 </body>
 </html>
 ```
+O exemplo acima tem o seguinte resultado no navegador:
+
+![m'exemplo do resultado](imagens/img0.jpg)
 
 # Variaveis
 
 
-No vue js, podemos fazer uso das variáveis acima apresentadas dentro de métodos, mas elas também são apresentadas dentro do objeto ou da função/método `'data'`:
+No vue js, podemos fazer uso das variáveis dentro de métodos, mas elas também são apresentadas dentro do objeto ou método `'data'`, essas variáveis postas dentro de data, podem ser **rendenizados** dentro dos **templates** html.
 
-~~~javascript
-...
-data() {
-  return {
-    variavel_a: 1,
-    variavel_b: 'nome',
-    ...
-  }
-},
-...
+~~~html
+<div id="app">
+  {{variavel_a}}
+  {{variavel_b}}
+</div>
 ~~~
 
+~~~javascript
+var app = new Vue({
+  el: '#app',
+  data() {
+    return {
+      variavel_a: 1,
+      variavel_b: 'nome',
+      ...
+    }
+  }
+})
+~~~
+O exemplo acima tem o seguinte resultado no navegador:
+
+![m'exemplo do resultado](imagens/img1.jpg)
+
+
+~~~html
+<div id="app">
+  <div>{{ variavel_texto }}</div>
+  <div>{{ variavel_numero_inteiro }}</div>
+  <div>{{ variavel_ponto_flutuante }}</div>
+  <div>{{ variavel_boleana }}</div>
+  <div>{{ variavel_vetor }}</div>
+  <div>{{ variavel_objeto }}</div>
+  <div>{{ variavel_nula }}</div>
+  <div>{{ variavel_indefinida }}</div>
+</div>
+~~~
 ```javascript
   var app = new Vue({
     el: '#app',
@@ -661,6 +688,53 @@ data() {
     }
   })
 ```
+O exemplo acima tem o seguinte resultado no navegador:
+
+![m'exemplo do resultado](imagens/img2.jpg)
+
+## Diretivas
+
+No Vue.js temos diversas diretivas que auxiliam na construção do código, elas são prefixadas iniciando com `'v-'` para indicar que são atributos especiais do vue, e cada uma tem comportamentos diferentes.
+
+~~~html
+<div id="app">
+    <div>Ao editar esse campo</div>
+    <div><input type="text" v-bind:value="variavel_a" /></div>
+    <div>ele não irá afetar a exibição [ {{variavel_a}} ]</div>
+    <hr>
+    <div>Ao editar esse campo</div>
+    <div><input type="text" v-model="variavel_b" /></div>
+    <div>ele irá afetar a exibição aqui [ {{variavel_b}} ] </div>
+</div>
+~~~
+~~~javascript
+var app = new Vue({
+  el: '#app',
+  data() {
+    return {
+      variavel_a: 10,
+      variavel_b: 20,
+      ...
+    }
+  }
+})
+~~~
+
+No exemplo acima temos as seguintes diretivas `'v-bind'` e `'v-model'`:
+
+No caso do `v-bind` ele consegue exibir o valor da `variavel_a` dentro da propriedade `value` do `input`, mas ao modificar o valor do campo ele não irá atualizar o valor da `variavel_a`, nesse caso ela continuará sendo `'10'`.
+
+No caso do `v-model`, ele consegue exibir o valor da `variavel_b` dentro da propriedade `value` do `input`, mas ao modificar o valor do campo ele automaticamente irá atualizar o valor da `variavel_b`, nesse caso irá assumir o valor que for informado.
+
+Exemplo Inicial
+
+![m'exemplo do resultado](imagens/img3.jpg)
+
+Exemplo Modificado
+
+![m'exemplo do resultado modificado os campos](imagens/img4.jpg)
+
+> Aqui se percebe que ao modificar o valor do campo, ele modificou o valor dentro dos colchetes, e a `variavel_b` terá o valor `20 modificado`
 
 ## Funções
 
