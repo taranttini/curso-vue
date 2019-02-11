@@ -10,6 +10,7 @@ Curso básico apresentando um pouco do que, e criando projeto de estudo
 - aplicar exemplos 
 - revisar todo o conteúdo
 - necessario dividir em arquivos
+- incluir um pouco sobre html
 ---
 
 Esse curso básico de Vue será divido em duas partes: 
