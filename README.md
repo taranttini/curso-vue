@@ -1,5 +1,5 @@
 # Curso Básico de Vue (em desenvolvimento...)
-Curso básico apresentando um pouco de html, javscript e principalmente VueJs. Estou criando meu material de estudo para futuramenten criar vídeos utilizando esse documento. ***como é difícil tenrar usar isso no telefone algumas vezes para colocar marcações***.
+Curso básico apresentando um pouco de html, javscript e principalmente VueJs. Estou criando meu material de estudo para futuramenten criar vídeos utilizando esse documento. ***como é difícil tentar usar isso no telefone algumas vezes para colocar marcações***.
 
 ### objetivo
 
@@ -802,8 +802,10 @@ Exemplo Modificado
 **v-show**
 
 **v-if**
+com essa diretiva podemos exibir o conteúdo que estiver dentro da tag ao qual ela estiver sendo exposta somente se atender a condição v-if, é um validador de condição, que só exibe os dados se a condição for satisfatória, igual ao if do javascript padrão.
 
 **v-else**
+com essa condição, serve para ser a contradição do v-if, se o v-if nao for satisfatório, será então exibido o conteúdo que estiver no v-else, fubcionando da mesma forma do else do javascript padrão.
 
 **v-for**
 
@@ -812,8 +814,10 @@ Exemplo Modificado
 **v-bind**
 
 **v-model**
+com essa diretiva é possivel fazer uma amarração entre uma tag especifica do html com uma variavel definida em vue, o v-model, funciona para as tags input, textarea e select. sendo assim ao usar essas tags Html, ao modificar os valores desses elementos ele atualiza automaticamente o valor da variável, conhecido como o Two Way Databind.
 
 **v-pre**
+com essa diretiva é possivel exibir as chaves e conteúdo sem a formatação automatica do html ou do template rendenizado do vue, agindo de uma forma que ele nao deixa ser aplicado sua formatação, então da forma que for posto o conteúdo dentro do v-pre, ele será exibido da mesma forma, sem sofrer nenhuma formatação/interpretação padrão do navegador, ele simplesmente ignora a linguagem e exibe ela natualmente.
 
 **v-cloak**
 
