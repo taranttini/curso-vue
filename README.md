@@ -597,8 +597,21 @@ console.log('fim')
 // aqui temos a saída : codigo do senao e fim
 ~~~
 
-
 Então se a condição for satistaória ela irá realizar aquele trecho de código, se não for satisfatória o programa ele ira ignorar o techo de código do se, e simplesmente irá executar o trecho de código do senão.
+
+***Controle de repetição `'FOR'`:***
+
+***Controle de repetição `'WHILE'`:***
+
+***Controle de repetição `'DO-WHILE'`:***
+
+***Controle de repetição `'FOR IN'`:***
+
+***Controle de repetição `'FOR ON'`:***
+
+***Controle de repetição `'continue'`:***
+
+***Controle de repetição `'break'`:***
 
 
 ---
