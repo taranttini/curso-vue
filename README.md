@@ -650,7 +650,7 @@ for (var i=0; i<10; i++) {
 }
 ~~~
 
-> O código acima seria o mesmo que esse código abaixo:
+O código acima seria o mesmo que esse código abaixo:
 
 ~~~javascript
 var i=0;
@@ -689,6 +689,7 @@ Soma 1 no `i`
 
 Então temos o passo a passo:
 
+
 1. `var i = 0`; // variável inicial
 
 2. enquanto `0 < 3;` //sim \
@@ -709,9 +710,9 @@ Então temos o passo a passo:
 5. enquanto `3 < 3;` // não \
    // como a condição não é mais satisfatória ele não irá mais executar o código das chaves e simplesmente finaliza a estrutura
 
-> Declaro variável inicial `i` igual à 0; 
-
-> Enquanto `i` menor que 10; // repete procedimento \
+> Declaro variável inicial `i` igual à 0; \
+\
+Enquanto `i` menor que 10; // repete procedimento \
 realiza o código \
 Soma 1 no `i`
 
@@ -726,9 +727,9 @@ while (i < 10) {
 
 Também podemos fazer decrescente:
 
-> Declaro variável inicial `i` igual à 10; 
-
-> Enquanto `i` maior que 0; // repete procedimento \
+> Declaro variável inicial `i` igual à 10; \
+\
+Enquanto `i` maior que 0; // repete procedimento \
 realiza o código \
 Subtrai 1 no `i`
 
@@ -771,7 +772,7 @@ Então temos o passo a passo:
    
 5. // como a condição não é mais satisfatória ele não irá mais executar o código das chaves e simplesmente finaliza a estrutura
 
-> Usando a estrutura do-while, primeiro ele executa a instrução, e só irá repetir as mesmas instruções se a condição for satisfatória
+Usando a estrutura do-while, primeiro ele executa a instrução, e só irá repetir as mesmas instruções se a condição for satisfatória
 
 ~~~javascript
 var i = 1; // inicializo
@@ -782,9 +783,10 @@ do {
 } while (i > 5)
 ~~~
 
-> No exemplo acima, ele irá executar o código ao menos 1 vez, mas não irá repetir a instrução pois ela não será mais satisfatória.
+No exemplo acima, ele irá executar o código ao menos 1 vez, mas não irá repetir a instrução pois ela não será mais satisfatória.
 
 > Declaro variável `i` igual à 0; \
+\
 Faça \
 realiza o código \
 Soma 1 no `i` \
