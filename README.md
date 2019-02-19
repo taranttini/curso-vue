@@ -620,27 +620,27 @@ Repete todo o procedimento se o `i` for menor que 3; \
 Então temos o passo a passo:
 
 1. para `i = 0`;\
-   se `0 < 3;` //sim \
-   `imprime o conteudo de i;` //0 \
-   `i++;` // após realizar o conteúdo das chaves ele irá somar +1 ao i
+   se `0 < 3;` *//sim* \
+   `imprime o conteudo de i;` *//0* \
+   `i++;` *// após realizar o conteúdo das chaves ele irá somar +1 ao i*
     
-2. para `i = 1;` // por causa do i++ \
-   se `1 < 3;` // sim \
-   `imprime o conteúdo de i;` //1 \
-   `i++;` // após realizar o conteúdo das chaves ele irá somar +1 ao i
+2. para `i = 1;` *// por causa do i++* \
+   se `1 < 3;` *// sim* \
+   `imprime o conteúdo de i;` *//1* \
+   `i++;` *// após realizar o conteúdo das chaves ele irá somar +1 ao i*
 
-3. para `i = 2;` // por causa do i++ \
-   se `2 < 3;` // sim \
-   `imprime o conteúdo de i;` //2 \
-   `i++;` // após realizar o conteúdo das chaves ele irá somar +1 ao `i` 
+3. para `i = 2;` *// por causa do i++* \
+   se `2 < 3;` *// sim* \
+   `imprime o conteúdo de i;` *//2* \
+   `i++;` *// após realizar o conteúdo das chaves ele irá somar +1 ao `i`* 
   
-4. para `i = 3;` // por causa do i++ \
-   se `3 < 3;` // não \
-   // como a condição não é mais satisfatória ele não irá mais executar o código das chaves e simplesmente finaliza a estrutura
+4. para `i = 3;` *// por causa do i++* \
+   se `3 < 3;` *// não* \
+   *// como a condição não é mais satisfatória ele não irá mais executar o código das chaves e simplesmente finaliza a estrutura*
 
   
 > Para variável `i` igual à 0; \
-Se `i` for menor que 10; // repete procedimento \
+Se `i` for menor que 10; *// repete procedimento* \
 realiza código \
 Soma 1 no `i` 
 
@@ -670,8 +670,8 @@ Fazer isso acima é um pouco feio, então a estrutura de repetição nos ajuda a
 Também podemos fazer decrescente:
 
 > Para variável `i` igual à 10; \
-Se `i` for maior que 0; // repete procedimento \
-realiza código \
+Se `i` for maior que 0; *// repete procedimento \
+realiza código* \
 Subtrai 1 no `i` 
 
 ~~~javascript
@@ -683,36 +683,37 @@ for (var i=10; i>0; i++) {
 ***Controle de repetição `'WHILE'`:*** serve para criar uma estrutura de repetição, onde ele irá repetir um bloco de código enquanto a condição for satisfatória, no caso do while temos:
 
 > Declaro variável `i` igual à 0; \
-Enquanto `i` menor que 3; // repete procedimento \
+\
+Enquanto `i` menor que 3; *// repete procedimento* \
 realiza o código \
 Soma 1 no `i`
 
 Então temos o passo a passo:
 
 
-1. `var i = 0`; // variável inicial
+1. `var i = 0`; *// variável inicial*
 
-2. enquanto `0 < 3;` //sim \
-   `imprime o conteudo de i;` //0 \
-   `i++;` // irá somar +1 ao i \
-   `i = 1;` // por causa do i++
+2. enquanto `0 < 3;` *// sim* \
+   `imprime o conteudo de i;` *//0* \
+   `i++;` *// irá somar +1 ao i* \
+   `i = 1;` *// por causa do i++*
     
-3. enquanto `1 < 3;` // sim \
-   `imprime o conteúdo de i;` //1 \
-   `i++;` // irá somar +1 ao i \
-   `i = 2;` // por causa do i++
+3. enquanto `1 < 3;` *// sim* \
+   `imprime o conteúdo de i;` *//1* \
+   `i++;` *// irá somar +1 ao i* \
+   `i = 2;` *// por causa do i++*
 
-4. enquanto `2 < 3;` // sim \
-   `imprime o conteúdo de i;` //2 \
-   `i++;` // irá somar +1 ao i \
-   `i = 3;` // por causa do i++
+4. enquanto `2 < 3;` *// sim* \
+   `imprime o conteúdo de i;` *//2* \
+   `i++;` *// irá somar +1 ao i* \
+   `i = 3;` *// por causa do i++*
    
-5. enquanto `3 < 3;` // não \
-   // como a condição não é mais satisfatória ele não irá mais executar o código das chaves e simplesmente finaliza a estrutura
+5. enquanto `3 < 3;` *// não* \
+   *// como a condição não é mais satisfatória ele não irá mais executar o código das chaves e simplesmente finaliza a estrutura*
 
 > Declaro variável inicial `i` igual à 0; \
 \
-Enquanto `i` menor que 10; // repete procedimento \
+Enquanto `i` menor que 10; *// repete procedimento* \
 realiza o código \
 Soma 1 no `i`
 
@@ -729,7 +730,7 @@ Também podemos fazer decrescente:
 
 > Declaro variável inicial `i` igual à 10; \
 \
-Enquanto `i` maior que 0; // repete procedimento \
+Enquanto `i` maior que 0; *// repete procedimento* \
 realiza o código \
 Subtrai 1 no `i`
 
@@ -746,31 +747,32 @@ while (i > 0) {
 
 
 > Declaro variável `i` igual à 0; \
+\
 Faça \
 realiza o código \
 Soma 1 no `i` \
-Enquanto `i` menor que 3; // repete procedimento
+Enquanto `i` menor que 3; *// repete procedimento*
 
 Então temos o passo a passo:
 
-1. `var i = 0`; // variável inicial
+1. `var i = 0`; *// variável inicial*
 
-2. `imprime o conteudo de i;` //0 \
-   `i++;` // irá somar +1 ao i \
-   `i = 1;` // por causa do i++ \
-   `1 < 3;` //sim 
+2. `imprime o conteudo de i;` *//0* \
+   `i++;` *// irá somar +1 ao i* \
+   `i = 1;` *// por causa do i++* \
+   `1 < 3;` *//sim* 
     
-3. `imprime o conteúdo de i;` //1 \
-   `i++;` // irá somar +1 ao i \
-   `i = 2;` // por causa do i++ \
-   `2 < 3;` // sim
+3. `imprime o conteúdo de i;` *//1* \
+   `i++;` *// irá somar +1 ao i* \
+   `i = 2;` *// por causa do i++* \
+   `2 < 3;` *// sim*
 
-4. `imprime o conteúdo de i;` //2 \
-   `i++;` // irá somar +1 ao i \
-   `i = 3;` // por causa do i++ \
-   `3 < 3;` // sim
+4. `imprime o conteúdo de i;` *//2* \
+   `i++;` *// irá somar +1 ao i* \
+   `i = 3;` *// por causa do i++* \
+   `3 < 3;` *// sim*
    
-5. // como a condição não é mais satisfatória ele não irá mais executar o código das chaves e simplesmente finaliza a estrutura
+5. *// como a condição não é mais satisfatória ele não irá mais executar o código das chaves e simplesmente finaliza a estrutura*
 
 Usando a estrutura do-while, primeiro ele executa a instrução, e só irá repetir as mesmas instruções se a condição for satisfatória
 
@@ -790,7 +792,7 @@ No exemplo acima, ele irá executar o código ao menos 1 vez, mas não irá repe
 Faça \
 realiza o código \
 Soma 1 no `i` \
-Enquanto `i` menor que 10; // repete procedimento
+Enquanto `i` menor que 10; *// repete procedimento*
 
 ~~~javascript
 var i = 0; // inicializo
@@ -804,6 +806,7 @@ do {
 ***Controle de repetição `'FOR IN'`:***
 ~~~javascript
 var lista = ['a','b','c'];
+
 for (var i in lista) {
   console.log(i);
 }
@@ -812,6 +815,7 @@ for (var i in lista) {
 ***Controle de repetição `'FOR ON'`:***
 ~~~javascript
 var lista = ['a','b','c'];
+
 for (var i on lista) {
   console.log(i);
 }
