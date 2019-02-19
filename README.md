@@ -601,30 +601,202 @@ console.log('fim')
 
 Então se a condição for satistaória ela irá realizar aquele trecho de código, se não for satisfatória o programa ele ira ignorar o techo de código do se, e simplesmente irá executar o trecho de código do senão.
 
-***Controle de repetição `'FOR'`:***
+***Controle de repetição `'FOR'`:*** serve para criar uma estrutura de repetição, onde ele irá repetir um bloco de código para toda a condição satisfatória, no caso do `for` temos:
+
 ~~~javascript
-for (var i; i<10; i++) {
+for (var i=0; i<3; i++) {
   console.log(i);
 }
 ~~~
 
-***Controle de repetição `'WHILE'`:***
+
+> Para variável i igual à 0; \
+Se `i` for menor que 3; \
+Realiza o código dentro das chaves; \
+Soma 1 no `i`; \
+Repete todo o procedimento se o `i` for menor que 3; \
+
+
+Então temos o passo a passo:
+
+1. para `i = 0`;\
+   se `0 < 3;` //sim \
+   `imprime o conteudo de i;` //0 \
+   `i++;` // após realizar o conteúdo das chaves ele irá somar +1 ao i
+    
+2. para `i = 1;` // por causa do i++ \
+   se `1 < 3;` // sim \
+   `imprime o conteúdo de i;` //1 \
+   `i++;` // após realizar o conteúdo das chaves ele irá somar +1 ao i
+
+3. para `i = 2;` // por causa do i++ \
+   se `2 < 3;` // sim \
+   `imprime o conteúdo de i;` //2 \
+   `i++;` // após realizar o conteúdo das chaves ele irá somar +1 ao `i` 
+  
+4. para `i = 3;` // por causa do i++ \
+   se `3 < 3;` // não \
+   // como a condição não é mais satisfatória ele não irá mais executar o código das chaves e simplesmente finaliza a estrutura
+
+  
+> Para variável `i` igual à 0; \
+Se `i` for menor que 10; // repete procedimento \
+realiza código \
+Soma 1 no `i` 
+
 ~~~javascript
-var i = 0;
+for (var i=0; i<10; i++) {
+  console.log(i);
+}
+~~~
+
+> O código acima seria o mesmo que esse código abaixo:
+
+~~~javascript
+var i=0;
+console.log(i++); //0
+console.log(i++); //1
+console.log(i++); //2
+console.log(i++); //3
+console.log(i++); //4
+console.log(i++); //5
+console.log(i++); //6
+console.log(i++); //7
+console.log(i++); //8
+console.log(i++); //9
+~~~
+Fazer isso acima é um pouco feio, então a estrutura de repetição nos ajuda a montar um código mais limpo ou reduzido.
+
+Também podemos fazer decrescente:
+
+> Para variável `i` igual à 10; \
+Se `i` for maior que 0; // repete procedimento \
+realiza código \
+Subtrai 1 no `i` 
+
+~~~javascript
+for (var i=10; i>0; i++) {
+  console.log(i);
+}
+~~~
+
+***Controle de repetição `'WHILE'`:*** serve para criar uma estrutura de repetição, onde ele irá repetir um bloco de código enquanto a condição for satisfatória, no caso do while temos:
+
+> Declaro variável `i` igual à 0; \
+Enquanto `i` menor que 3; // repete procedimento \
+realiza o código \
+Soma 1 no `i`
+
+Então temos o passo a passo:
+
+1. `var i = 0`; // variável inicial
+
+2. enquanto `0 < 3;` //sim \
+   `imprime o conteudo de i;` //0 \
+   `i++;` // irá somar +1 ao i \
+   `i = 1;` // por causa do i++
+    
+3. enquanto `1 < 3;` // sim \
+   `imprime o conteúdo de i;` //1 \
+   `i++;` // irá somar +1 ao i \
+   `i = 2;` // por causa do i++
+
+4. enquanto `2 < 3;` // sim \
+   `imprime o conteúdo de i;` //2 \
+   `i++;` // irá somar +1 ao i \
+   `i = 3;` // por causa do i++
+   
+5. enquanto `3 < 3;` // não \
+   // como a condição não é mais satisfatória ele não irá mais executar o código das chaves e simplesmente finaliza a estrutura
+
+> Declaro variável inicial `i` igual à 0; 
+
+> Enquanto `i` menor que 10; // repete procedimento \
+realiza o código \
+Soma 1 no `i`
+
+~~~javascript
+var i = 0; //inicializo
+
 while (i < 10) {
   console.log(i);
   i++;
 }
 ~~~
 
-***Controle de repetição `'DO-WHILE'`:***
+Também podemos fazer decrescente:
+
+> Declaro variável inicial `i` igual à 10; 
+
+> Enquanto `i` maior que 0; // repete procedimento \
+realiza o código \
+Subtrai 1 no `i`
+
 ~~~javascript
-var i = 0;
+var i = 10; // inicializo
+
+while (i > 0) {
+  console.log(i);
+  i--;
+}
+~~~
+
+***Controle de repetição `'DO-WHILE'`:*** serve para criar uma estrutura de repetição, onde ele manda executar um bloco de código, e enquanto a condição for satisfatória ele manda repetir o bloco de código, no caso do do-while temos:
+
+
+> Declaro variável `i` igual à 0; \
+Faça \
+realiza o código \
+Soma 1 no `i` \
+Enquanto `i` menor que 3; // repete procedimento
+
+Então temos o passo a passo:
+
+1. `var i = 0`; // variável inicial
+
+2. `imprime o conteudo de i;` //0 \
+   `i++;` // irá somar +1 ao i \
+   `i = 1;` // por causa do i++ \
+   `1 < 3;` //sim 
+    
+3. `imprime o conteúdo de i;` //1 \
+   `i++;` // irá somar +1 ao i \
+   `i = 2;` // por causa do i++ \
+   `2 < 3;` // sim
+
+4. `imprime o conteúdo de i;` //2 \
+   `i++;` // irá somar +1 ao i \
+   `i = 3;` // por causa do i++ \
+   `3 < 3;` // sim
+   
+5. // como a condição não é mais satisfatória ele não irá mais executar o código das chaves e simplesmente finaliza a estrutura
+
+> Usando a estrutura do-while, primeiro ele executa a instrução, e só irá repetir as mesmas instruções se a condição for satisfatória
+
+~~~javascript
+var i = 1; // inicializo
+
 do {
   console.log(i);
   i++;
-}
-while (i < 10)
+} while (i > 5)
+~~~
+
+> No exemplo acima, ele irá executar o código ao menos 1 vez, mas não irá repetir a instrução pois ela não será mais satisfatória.
+
+> Declaro variável `i` igual à 0; \
+Faça \
+realiza o código \
+Soma 1 no `i` \
+Enquanto `i` menor que 10; // repete procedimento
+
+~~~javascript
+var i = 0; // inicializo
+
+do {
+  console.log(i);
+  i++;
+} while (i < 10)
 ~~~
 
 ***Controle de repetição `'FOR IN'`:***
