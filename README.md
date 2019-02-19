@@ -602,14 +602,46 @@ console.log('fim')
 Então se a condição for satistaória ela irá realizar aquele trecho de código, se não for satisfatória o programa ele ira ignorar o techo de código do se, e simplesmente irá executar o trecho de código do senão.
 
 ***Controle de repetição `'FOR'`:***
+~~~javascript
+for (var i; i<10; i++) {
+  console.log(i);
+}
+~~~
 
 ***Controle de repetição `'WHILE'`:***
+~~~javascript
+var i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+~~~
 
 ***Controle de repetição `'DO-WHILE'`:***
+~~~javascript
+var i = 0;
+do {
+  console.log(i);
+  i++;
+}
+while (i < 10)
+~~~
 
 ***Controle de repetição `'FOR IN'`:***
+~~~javascript
+var lista = ['a','b','c'];
+for (var i in lista) {
+  console.log(i);
+}
+~~~
 
 ***Controle de repetição `'FOR ON'`:***
+~~~javascript
+var lista = ['a','b','c'];
+for (var i on lista) {
+  console.log(i);
+}
+~~~
 
 ***Controle de repetição `'continue'`:***
 
