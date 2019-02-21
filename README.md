@@ -1,5 +1,5 @@
 # Curso Básico de Vue (em desenvolvimento...)
-Curso básico apresentando um pouco de html, javscript e principalmente VueJs. Estou criando meu material de estudo para futuramenten criar vídeos utilizando esse documento. ***como é difícil tentar usar isso no telefone algumas vezes para colocar marcações***.
+Curso básico apresentando um pouco de html, javscript e principalmente VueJs. Estou criando meu material de estudo para futuramenten criar vídeos utilizando esse documento. ***como é difícil tentar usar isso no telefone algumas vezes para colocar marcações***. 
 
 
 
@@ -821,9 +821,9 @@ for (var i on lista) {
 }
 ~~~
 
-***Controle de repetição `'continue'`:***
+***Controle de repetição `'continue'`:*** serve para pular para a próxima interação do laço de repetição, sem executar as próximas linhas de códígo
 
-***Controle de repetição `'break'`:***
+***Controle de repetição `'break'`:*** serve para encerrar o código dentro do laço de repetição, assim sendo ele finaliza o bloco de código e não continua mesmo que tenha mais interações a serem realizadas.
 
 
 ---
