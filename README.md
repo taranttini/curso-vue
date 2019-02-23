@@ -22,6 +22,12 @@ Esse curso básico de Vue será divido em duas partes:
 
 # Primeira Parte - JavaScript
 
+Variáveis
+
+número inteiro
+
+
+
 ## JavaScript
 
 ## O que é JavaScript?
