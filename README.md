@@ -1,6 +1,5 @@
 # Curso Básico de Vue (em desenvolvimento...)
-Curso básico apresentando um pouco de html, javscript e principalmente VueJs. Estou criando meu material de estudo para futuramenten criar vídeos utilizando esse documento. ***como é difícil tentar usar isso no telefone algumas vezes para colocar marcações***. 
-.
+Curso básico apresentando um pouco de html, javscript e principalmente VueJs. Estou criando meu material de estudo para futuramenten criar vídeos utilizando esse documento. ***como é difícil tentar usar isso no telefone algumas vezes para colocar marcações***
 
 
 ### objetivo
@@ -22,8 +21,8 @@ Esse curso básico de Vue será divido em duas partes:
 
 # Primeira Parte - JavaScript
 
+[criar menu]
 Variáveis
-
 número inteiro
 
 
